@@ -13,7 +13,25 @@
         padding: 0px;
     }
   }
+
+  /* cronometro */
+  .relogio {
+      position:absolute;
+      top:20px;
+      right: 20px;
+      display: flex;
+      font-size: 32px;
+      color: #75B79E;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      border: 1px solid #75B79E;
+      width: 100px;
+      height: 100px;
+  }
+
 /* Corpo */
+
 body {
     background-color: #eef9bf;
 }
@@ -47,6 +65,7 @@ section {
     width:117px;
     height: 146px;
     margin: 5px;
+    transition: 1s;
 } 
 .cardSecundario {
     width:117px;
@@ -72,7 +91,7 @@ section {
 }
 
 .rotacao {
-    transition: 4s;
+    transition: 1s;
     transform-style:preserve-3d;
     transform: rotateY(180deg);
 }
