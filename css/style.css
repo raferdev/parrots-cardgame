@@ -46,18 +46,15 @@ section {
 .cardPrimario {
     width:117px;
     height: 146px;
+    margin: 5px;
 } 
-@keyframes rotation {
-    from { transform: rotateY(0deg);}
-    to { transform:rotateY(180deg);}
-}
 .cardSecundario {
     width:117px;
     height: 146px;
     position:relative;
-    transform-style: preserve-3d;
-    animation: rotation 1s 1 alternate;
+    transform-style:preserve-3d;
 }
+
 .cardFrente {
     position:absolute;
     width: 100%;
@@ -66,12 +63,18 @@ section {
     box-sizing: border-box;
     border-radius: 5px;
     background-color: #A7E9AF;
-    background-image: url(png/front.png);
+    background-image: url(../png/front.png);
     background-size: 80%;
     background-position: center;
     background-repeat: no-repeat;
     flex-shrink: 0;
-    transform: translateZ(1);
+    transform: translateZ(1px);
+}
+
+.rotacao {
+    transition: 4s;
+    transform-style:preserve-3d;
+    transform: rotateY(180deg);
 }
 
 .cardVerso {
@@ -82,10 +85,30 @@ section {
     box-sizing: border-box;
     border-radius: 5px;
     background-color: #A7E9AF;
-    background-image: url(GIF/explodyparrot.gif);
     background-size: 80%;
     background-position: center;
     background-repeat: no-repeat;
     flex-shrink: 0;
-    transform: translateZ(-1px);
+    transform: translateZ(-1px) ;
+}
+.cardVerso.verso0 {
+    background-image: url(../GIF/explodyparrot.gif);
+}
+.cardVerso.verso1 {
+    background-image: url(../GIF/bobrossparrot.gif);
+}
+.cardVerso.verso2 {
+    background-image: url(../GIF/fiestaparrot.gif);
+}
+.cardVerso.verso3 {
+    background-image: url(../GIF/metalparrot.gif);
+}
+.cardVerso.verso4 {
+    background-image: url(../GIF/revertitparrot.gif);
+}
+.cardVerso.verso5 {
+    background-image: url(../GIF/tripletsparrot.gif);
+}
+.cardVerso.verso6 {
+    background-image: url(../GIF/unicornparrot.gif);
 }
