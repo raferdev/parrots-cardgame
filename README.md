@@ -35,7 +35,7 @@ This project i use to training the Javascript logic. I had to integrate logic wi
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
-You can clone the project and start on your local host or open the site hospeded <a href="https://raferdev.github.io/driveneats/">here</a>
+You can clone the project and start on your local host or open the site hospeded <a href="https://raferdev.github.io/parrots-cardgame/">here</a>
 
 Clone
 
