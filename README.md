@@ -40,7 +40,7 @@ You can clone the project and start on your local host or open the site hospeded
 Clone
 
  ```
- git clone https://github.com/raferdev/instagram
+ git clone https://github.com/raferdev/parrots-cardgame
  ```
 
 ## 🎈 Usage <a name="usage"></a>
